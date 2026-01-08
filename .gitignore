@@ -1,0 +1,60 @@
+# --- Dependencies ---
+node_modules/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- System & OS ---
+.DS_Store
+Thumbs.db
+.spotlight-V100
+.Trashes
+ehthumbs.db
+[Dd]esktop.ini
+
+# --- Shopify CLI & Theme ---
+# The local cache for the Shopify CLI
+.shopify/
+
+# Local configuration files that should never be shared
+shopify.theme.toml
+*.local
+
+# We track settings_data.json, but in some workflows
+# you might want to ignore it if it causes conflicts.
+# config/settings_data.json
+
+# --- Build Artifacts (Nuance Required) ---
+# If you use Shopify's "Native GitHub Integration", you MUST comment these out
+# so the built assets are pushed to the store.
+# If you deploy via a GitHub Action that runs 'npm run build', keep these ignored
+# to keep your PRs clean.
+# assets/*.js
+# assets/*.css
+# assets/*.map
+
+# Ignore Vite's hot-reload client if it accidentally lands in assets
+assets/vite-client.js
+
+# --- Editor / IDE Settings ---
+# Ignore the whole folder by default...
+.idea/
+.vscode/
+
+# ...but force-include the shared team settings we created
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.editorconfig
+
+# --- Environment Secrets ---
+# NEVER commit API keys or private tokens
+.env
+.env.*
+!.env.example
+
+# --- Testing & Logs ---
+coverage/
+*.log
