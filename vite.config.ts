@@ -9,7 +9,7 @@ export default defineConfig({
     shopify({
       themeRoot: 'theme',
       sourceCodeDir: 'src',
-      entrypointsDir: 'stc/entrypoints',
+      entrypointsDir: 'src/entrypoints',
     }),
   ],
 
