@@ -22,19 +22,6 @@ ehthumbs.db
 shopify.theme.toml
 *.local
 
-# We track settings_data.json, but in some workflows
-# you might want to ignore it if it causes conflicts.
-# config/settings_data.json
-
-# --- Build Artifacts (Nuance Required) ---
-# If you use Shopify's "Native GitHub Integration", you MUST comment these out
-# so the built assets are pushed to the store.
-# If you deploy via a GitHub Action that runs 'npm run build', keep these ignored
-# to keep your PRs clean.
-# assets/*.js
-# assets/*.css
-# assets/*.map
-
 # Ignore Vite's hot-reload client if it accidentally lands in assets
 assets/vite-client.js
 

@@ -8,14 +8,14 @@ export default defineConfig({
     tailwindcss(),
     shopify({
       themeRoot: 'theme',
-      sourceCodeDir: 'frontend',
-      entrypointsDir: 'frontend/entrypoints',
+      sourceCodeDir: 'src',
+      entrypointsDir: 'stc/entrypoints',
     }),
   ],
 
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './frontend'),
+      '@': path.resolve(__dirname, './src'),
       '~': path.resolve(__dirname, './node_modules'),
     },
   },
