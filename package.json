@@ -3,8 +3,21 @@
   "private": true,
   "type": "module",
   "version": "1.0.0",
-  "description": "Shopify theme development workflow with Vite, TypeScript, and Tailwind CSS",
   "main": "index.js",
+  "description": "Shopify theme development workflow with Vite, TypeScript, and Tailwind CSS",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-brooklinen/mcp-workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michael-brooklinen/mcp-workflow/issues"
+  },
+  "homepage": "https://github.com/michael-brooklinen/mcp-workflow#readme",
   "keywords": [
     "shopify-theme",
     "vite",
