@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     shopify({
+      themeRoot: 'theme',
       sourceCodeDir: 'frontend',
       entrypointsDir: 'frontend/entrypoints',
     }),
